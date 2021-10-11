@@ -1,0 +1,14 @@
+{
+    "name": "Oauth",
+    "alias": "oauth",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 1,
+    "providers": [
+        "Gdevilbat\\SpardaCMS\\Modules\\Oauth\\Providers\\OauthServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
