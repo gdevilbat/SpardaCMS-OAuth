@@ -14,6 +14,16 @@ class OauthController extends CoreController
      */
     public function client()
     {
-        return view('oauth::index');
+    	return view('oauth::admin.'.$this->data['theme_cms']->value.'.content.client', $this->data);
+    }
+
+    public function authorizedClient()
+    {
+    	return view('oauth::admin.'.$this->data['theme_cms']->value.'.content.authorized_client', $this->data);
+    }
+
+    public function personalAccessToken()
+    {
+    	return view('oauth::admin.'.$this->data['theme_cms']->value.'.content.personal_access_token', $this->data);
     }
 }

@@ -12,10 +12,6 @@ mix.setPublicPath('../resources/views/admin');
  |
  */
 
-mix.js('js/scrapper.js', 'v_1/js/scrapper.js')
-    .js('js/shopee.js', 'v_1/js/shopee.js')
-    .js('js/tokopedia.js', 'v_1/js/tokopedia.js')
-    .js('js/lazada.js', 'v_1/js/lazada.js')
-    .options({
-      processCssUrls: false
-   });
+mix.js('js/client.js', 'v_1/js/client.js')
+	.js('js/authorized_client.js', 'v_1/js/authorized_client.js')
+	.js('js/personal_access_token.js', 'v_1/js/personal_access_token.js');

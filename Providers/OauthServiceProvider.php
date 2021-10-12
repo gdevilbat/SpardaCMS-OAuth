@@ -4,6 +4,7 @@ namespace Gdevilbat\SpardaCMS\Modules\Oauth\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Laravel\Passport\Passport;
 
 class OauthServiceProvider extends ServiceProvider
 {
@@ -19,6 +20,9 @@ class OauthServiceProvider extends ServiceProvider
         $this->registerViews();
         $this->registerFactories();
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
+
+        Passport::routes();
+        Passport::personalAccessClientId('client-id');
     }
 
     /**

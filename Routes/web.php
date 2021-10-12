@@ -17,10 +17,8 @@ Route::group(['prefix' => 'control', 'middleware' => 'core.auth'], function() {
 
         Route::group(['middleware' => 'core.menu'], function() {
             Route::get('client', 'OauthController@client')->name('cms.oauth.client')->middleware('can:super-access');
-        });
-
-        Route::group(['prefix' => 'api'], function() {
-            //Route::get('master', 'UserController@serviceMaster')->middleware('can:menu-user');
+            Route::get('authorized-client', 'OauthController@authorizedClient')->name('cms.oauth.authorized-client')->middleware('can:super-access');
+            /*Route::get('personal-access-token', 'OauthController@personalAccessToken')->name('cms.oauth.personal-access-token')->middleware('can:super-access');*/
         });
 
     });
