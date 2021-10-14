@@ -21,7 +21,7 @@ class OauthServiceProvider extends ServiceProvider
         $this->registerFactories();
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
 
-        Passport::routes();
+        //Passport::routes();
         Passport::personalAccessClientId('client-id');
     }
 
