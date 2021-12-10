@@ -62,5 +62,5 @@
 @endsection
 
 @section('page_script_js')
-    {{Html::script(module_asset_url('oauth:resources/views/admin/v_1/js/personal_access_token.js').'?id='.filemtime(module_asset_path('oauth:resources/views/admin/v_1/js/personal_access_token.js')))}}
+    {{Html::script(module_asset_url('Oauth:resources/views/admin/v_1/js/personal_access_token.js').'?id='.filemtime(module_asset_path('Oauth:resources/views/admin/v_1/js/personal_access_token.js')))}}
 @endsection

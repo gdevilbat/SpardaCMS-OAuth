@@ -62,5 +62,5 @@
 @endsection
 
 @section('page_script_js')
-    {{Html::script(module_asset_url('oauth:resources/views/admin/v_1/js/authorized_client.js').'?id='.filemtime(module_asset_path('oauth:resources/views/admin/v_1/js/authorized_client.js')))}}
+    {{Html::script(module_asset_url('Oauth:resources/views/admin/v_1/js/authorized_client.js').'?id='.filemtime(module_asset_path('Oauth:resources/views/admin/v_1/js/authorized_client.js')))}}
 @endsection
