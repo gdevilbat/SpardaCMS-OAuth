@@ -59,7 +59,7 @@ class OauthServiceProvider extends ServiceProvider
     {
         $viewPath = resource_path('views/Modules/SpardaCMS/oauth');
 
-        $sourcePath = __DIR__.'/../resources/views';
+        $sourcePath = __DIR__.'/../Resources/views';
 
         $this->publishes([
             $sourcePath => $viewPath
@@ -82,7 +82,7 @@ class OauthServiceProvider extends ServiceProvider
         if (is_dir($langPath)) {
             $this->loadTranslationsFrom($langPath, 'oauth');
         } else {
-            $this->loadTranslationsFrom(__DIR__ .'/../resources/lang', 'oauth');
+            $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'oauth');
         }
     }
 
